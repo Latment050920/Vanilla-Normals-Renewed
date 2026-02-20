@@ -22,11 +22,13 @@ Vanilla style PBR resource pack, upgraded workflow for **Minecraft Java 1.21.11*
 - `*_e.png`: emissive map
 
 ## Automation scripts
-- `enhance_pbr.py` now supports stronger block-detail profiles so block surfaces read more clearly in-game (`--detail-profile bold`).
+- `enhance_pbr.py` now supports stronger block detail + reflective item treatment (metal/gem clearcoat & anisotropic brush).
 
 ```bash
 python scripts/diagnose_assets.py
 python scripts/run_all.py
+# hero blocks + hero reflective items
+python scripts/enhance_pbr.py --phase hero --theme theme.json --include-items --force-item-reflective
 ```
 
 ### Individual steps

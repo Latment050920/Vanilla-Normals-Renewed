@@ -17,11 +17,14 @@
   - `microdetail.edge_wear`
   - `microdetail.circuit_line_strength`
   - `emissive.level`
+  - `item_reflectance.metal_item_boost/gem_item_boost/glass_item_boost`
+  - `item_reflectance.clearcoat_strength`
+  - `item_reflectance.anisotropy`
 
 ## 生产流程（阶段化）
 1. 英雄方块阶段：
    ```bash
-   python scripts/enhance_pbr.py --phase hero --theme theme.json --emissive-level 4
+   python scripts/enhance_pbr.py --phase hero --theme theme.json --emissive-level 4 --include-items --force-item-reflective
    ```
 2. 扩全包阶段：
    ```bash
@@ -42,3 +45,9 @@
 ## UI 分辨率策略
 - `textures/block/**` + `textures/item/**` 目标 512x
 - GUI/UI 建议保持原生，避免字体和布局失真
+
+
+## 物品反光策略（新增）
+- 金属类物品（锭/工具/盔甲）降低 roughness 并抬高 metalness，形成更明确镜面反射。
+- 宝石类物品（钻石/绿宝石/紫水晶）使用中等金属度 + 低 roughness，营造高光清透感。
+- 加入各向异性刷纹（anisotropic brush）以增强工业终端风格。

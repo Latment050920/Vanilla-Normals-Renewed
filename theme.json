@@ -16,7 +16,9 @@
     "amplitude": 92,
     "edge_wear": 0.58,
     "circuit_line_strength": 0.42,
-    "sigil_density": 0.3
+    "sigil_density": 0.3,
+    "layer_count": 3,
+    "anisotropic_brush_strength": 0.55
   },
   "emissive": {
     "level": 4,
@@ -30,5 +32,12 @@
   "resolution": {
     "block_item": 512,
     "keep_ui_native": true
+  },
+  "item_reflectance": {
+    "metal_item_boost": 1.4,
+    "gem_item_boost": 1.25,
+    "glass_item_boost": 1.2,
+    "clearcoat_strength": 0.42,
+    "anisotropy": 0.68
   }
 }
