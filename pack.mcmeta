@@ -1,6 +1,10 @@
 {
   "pack": {
-    "pack_format": 15,
-    "description": "VNR for 1.20, by Poudingue"
+    "pack_format": 75,
+    "supported_formats": {
+      "min_inclusive": 55,
+      "max_inclusive": 75
+    },
+    "description": "Vanilla Normals Renewed PBR 512x for Minecraft Java 1.21.11"
   }
 }
