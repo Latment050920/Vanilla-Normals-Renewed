@@ -18,6 +18,8 @@ Vanilla style PBR resource pack, upgraded workflow for **Minecraft Java 1.21.11*
 - `*_e.png`: emissive map
 
 ## Automation scripts
+- `enhance_pbr.py` now supports stronger block-detail profiles so block surfaces read more clearly in-game (`--detail-profile bold`).
+
 ```bash
 python scripts/run_all.py
 ```
@@ -25,7 +27,7 @@ python scripts/run_all.py
 ### Individual steps
 ```bash
 python scripts/upgrade_to_512.py --target 512
-python scripts/enhance_pbr.py --emissive-level 3
+python scripts/enhance_pbr.py --emissive-level 3 --detail-profile bold --detail-boost 1.15
 python scripts/audit_resolution.py
 python scripts/audit_references.py
 python scripts/build_release.py --version 1.21.11-1
