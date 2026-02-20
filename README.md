@@ -1,5 +1,9 @@
 # Vanilla-Normals-Renewed
 
+## Style Preset
+- **赛博符箓・工业终端**：写实PBR基底 + 符箓/电路细线 + 功能性发光。
+- 主题参数由 `theme.json` 统一控制，可复刻可迭代。
+
 Vanilla style PBR resource pack, upgraded workflow for **Minecraft Java 1.21.11** with automated **512x** and LabPBR-oriented processing.
 
 ## Quick facts
@@ -21,6 +25,7 @@ Vanilla style PBR resource pack, upgraded workflow for **Minecraft Java 1.21.11*
 - `enhance_pbr.py` now supports stronger block-detail profiles so block surfaces read more clearly in-game (`--detail-profile bold`).
 
 ```bash
+python scripts/diagnose_assets.py
 python scripts/run_all.py
 ```
 
